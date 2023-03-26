@@ -94,6 +94,9 @@ public class ViewController implements ControllerDAO {
     @FXML
     protected Label lb10;
 
+    @FXML
+    protected Label lb11;
+
 
     @FXML
     protected Button bt01;
@@ -188,6 +191,7 @@ public class ViewController implements ControllerDAO {
 
             while (rs.next()) {
 
+                lb11.setText(String.valueOf(rs.getInt("id")));
                 lb01.setText(rs.getString("dtviagem"));
                 lb02.setText(rs.getString("empresa"));
                 lb03.setText(rs.getString("vlrfrete"));

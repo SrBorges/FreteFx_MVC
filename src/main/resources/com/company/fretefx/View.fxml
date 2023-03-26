@@ -4,6 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
@@ -54,117 +57,107 @@
       <Button fx:id="bt03" layoutX="685.0" layoutY="205.0" mnemonicParsing="false" onAction="#update" prefHeight="33.0" prefWidth="115.0" text="Atualizar" textFill="#3d8312" />
       <Button fx:id="bt04" layoutX="685.0" layoutY="274.0" mnemonicParsing="false" onAction="#delete" prefHeight="33.0" prefWidth="115.0" text="Excluir" textFill="#425437" />
       <Line endX="1057.0" endY="-0.5" layoutX="162.0" layoutY="363.0" startX="-163.0" startY="-0.5" />
-      <Label layoutX="89.0" layoutY="417.0" text="Data de Viagem = ">
+      <Label layoutX="14.0" layoutY="445.0" text="Data de Viagem: ">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="89.0" layoutY="488.0" text="Empresa = ">
+      <Label layoutX="15.0" layoutY="566.0" text="Valor do Frete: ">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="89.0" layoutY="553.0" text="Valor do Frete = ">
+      <Label layoutX="18.0" layoutY="505.0" text="Empresa: ">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="93.0" layoutY="614.0" text="Pedagio = ">
+      <Label layoutX="23.0" layoutY="624.0" text="Pedagio: ">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="404.0" layoutY="463.0" text="Quilometragem = ">
+      <Label layoutX="369.0" layoutY="505.0" text="Quilometragem: ">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="98.0" layoutY="665.0" text="Combustivel = ">
+      <Label layoutX="24.0" layoutY="672.0" text="Combustivel: ">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="404.0" layoutY="513.0" text="Estado = ">
+      <Label layoutX="372.0" layoutY="566.0" text="Cidade: ">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="404.0" layoutY="417.0" text="Codigo de Viagem = ">
+      <Label layoutX="372.0" layoutY="451.0" text="Codigo de Viagem:">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="404.0" layoutY="566.0" text="Cidade = ">
+      <Label layoutX="378.0" layoutY="624.0" text="Estado: ">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lb01" layoutX="280.0" layoutY="417.0" onDragDetected="#read">
+      <Label fx:id="lb01" layoutX="189.0" layoutY="445.0" onDragDetected="#read" prefHeight="25.0" prefWidth="130.0">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lb02" layoutX="210.0" layoutY="488.0" onDragDetected="#read">
+      <Label fx:id="lb02" layoutX="127.0" layoutY="505.0" onDragDetected="#read" prefHeight="25.0" prefWidth="147.0">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lb03" layoutX="261.0" layoutY="553.0" onDragDetected="#read">
+      <Label fx:id="lb03" layoutX="167.0" layoutY="566.0" onDragDetected="#read" prefHeight="25.0" prefWidth="155.0">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lb04" layoutX="203.0" layoutY="614.0" onDragDetected="#read">
+      <Label fx:id="lb04" layoutX="129.0" layoutY="624.0" onDragDetected="#read" prefHeight="25.0" prefWidth="143.0">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lb05" layoutX="261.0" layoutY="665.0" onDragDetected="#read">
+      <Label fx:id="lb05" layoutX="171.0" layoutY="672.0" onDragDetected="#read" prefHeight="25.0" prefWidth="147.0">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lb06" layoutX="617.0" layoutY="417.0" onDragDetected="#read">
+      <Label fx:id="lb06" layoutX="575.0" layoutY="451.0" onDragDetected="#read" prefHeight="25.0" prefWidth="190.0">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lb07" layoutX="596.0" layoutY="463.0" onDragDetected="#read">
+      <Label fx:id="lb07" layoutX="560.0" layoutY="505.0" onDragDetected="#read" prefHeight="25.0" prefWidth="170.0">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lb08" layoutX="504.0" layoutY="513.0" onDragDetected="#read">
+      <Label fx:id="lb08" layoutX="481.0" layoutY="566.0" onDragDetected="#read" prefHeight="25.0" prefWidth="175.0">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="lb09" layoutX="511.0" layoutY="566.0" onDragDetected="#read">
+      <Label fx:id="lb09" layoutX="467.0" layoutY="624.0" onDragDetected="#read" prefHeight="25.0" prefWidth="143.0">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="717.0" layoutY="732.0">
+      <Label layoutX="369.0" layoutY="697.0" text="Valor Pago: ">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="404.0" layoutY="627.0" text="Valor Pago =">
+      <Label fx:id="lb10" layoutX="508.0" layoutY="697.0" onDragDetected="#read" prefHeight="25.0" prefWidth="155.0">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="820.0" layoutY="732.0">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label fx:id="lb10" layoutX="547.0" layoutY="627.0" onDragDetected="#read">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Line endX="94.5" endY="-125.0" layoutX="768.0" layoutY="488.0" startX="105.5" startY="387.0" />
+      <Line endX="99.5" endY="-124.70709228515625" layoutX="768.0" layoutY="488.0" startX="105.5" startY="387.0" />
       <TextField fx:id="tf11" alignment="CENTER" layoutX="931.0" layoutY="413.0" onAction="#update" prefHeight="33.0" prefWidth="231.0" promptText="Atualizar Frete">
          <font>
             <Font name="System Bold" size="16.0" />
@@ -175,12 +168,72 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </TextField>
-      <Line endX="268.0" layoutX="952.0" layoutY="553.0" startX="-90.2071533203125" />
-      <Line endX="57.5" endY="32.0" layoutX="1162.0" layoutY="331.0" startX="53.5" startY="221.5" />
+      <Line endX="268.0" layoutX="952.0" layoutY="553.0" startX="-83.5" />
+      <Line endX="57.5" endY="32.0" layoutX="1162.0" layoutY="331.0" startX="58.5" startY="222.5" />
       <TextField fx:id="tf13" alignment="CENTER" layoutX="931.0" layoutY="603.0" onAction="#delete" prefHeight="33.0" prefWidth="231.0" promptText="ID Para baixa">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </TextField>
+      <Line endX="232.2928466796875" layoutX="989.0" layoutY="709.0" startX="-114.085693359375" />
+      <Label layoutX="900.0" layoutY="745.0" prefHeight="25.0" prefWidth="93.0" text="N ° do ID: " textFill="#c91515">
+         <font>
+            <Font name="DejaVu Sans Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb11" layoutX="1005.0" layoutY="748.0" onDragDetected="#read" textFill="#c91f1f">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Line endX="194.5" layoutX="129.0" layoutY="417.0" startX="-129.0" />
+      <Line endX="30.0" endY="-45.5" layoutX="294.0" layoutY="463.0" startX="30.0" startY="413.29290771484375" />
+      <Line endX="448.5" layoutX="419.0" layoutY="418.0" startX="-100.0" />
+      <Line endX="772.2071533203125" layoutX="102.0" layoutY="805.0" startX="-100.0" />
+      <Label layoutX="912.0" layoutY="63.0" text="Sistema ">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#c91a1a" />
+                  <Stop color="#650a0a" offset="0.9962962962962963" />
+                  <Stop color="#650a0a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="902.0" layoutY="135.0" text="Gerenciador " textAlignment="RIGHT">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#b21a1a" />
+                  <Stop color="#b21a1a" offset="0.007407407407407408" />
+                  <Stop color="#221b1b" offset="0.9962962962962963" />
+                  <Stop color="#221b1b" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="914.0" layoutY="204.0" text="de Frete">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f5800a" />
+                  <Stop color="#f5800a" offset="0.007407407407407408" />
+                  <Stop color="#221b1b" offset="0.9962962962962963" />
+                  <Stop color="#221b1b" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Line endX="12.2071533203125" endY="534.7070922851562" layoutX="862.0" layoutY="341.0" startX="-0.2071533203125" startY="-341.0" />
    </children>
 </AnchorPane>
