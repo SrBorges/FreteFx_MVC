@@ -22,6 +22,7 @@ public class ViewController implements ControllerDAO {
     public String cidade;
     public String estado;
     public String vlrpago;
+    public int atualizar, excluir;
 
 
     @FXML
@@ -55,6 +56,15 @@ public class ViewController implements ControllerDAO {
     protected TextField tf10;
 
     @FXML
+    protected TextField tf11;
+
+    @FXML
+    protected TextField tf12;
+
+    @FXML
+    protected TextField tf13;
+
+    @FXML
     protected Label lb01;
 
     @FXML
@@ -83,6 +93,7 @@ public class ViewController implements ControllerDAO {
 
     @FXML
     protected Label lb10;
+
 
     @FXML
     protected Button bt01;
@@ -177,12 +188,18 @@ public class ViewController implements ControllerDAO {
 
             while (rs.next()) {
 
+                lb01.setText(rs.getString("dtviagem"));
+                lb02.setText(rs.getString("empresa"));
+                lb03.setText(rs.getString("vlrfrete"));
+                lb04.setText(rs.getString("pedagio"));
+                lb05.setText(rs.getString("combustivel"));
+                lb06.setText(rs.getString("quilometragem"));
+                lb07.setText(rs.getString("codviagem"));
+                lb08.setText(rs.getString("cidade"));
+                lb09.setText(rs.getString("estado"));
+                lb10.setText(rs.getString("vlrpago"));
 
-                System.out.println(rs.getString("dtviagem") + ", " + rs.getString("empresa")
-                        + ", " + rs.getString("vlrfrete") + ", " + rs.getString("pedagio") + ", " + rs.getString("combustivel")
-                        + ", " + rs.getString("quilometragem") + ", " + rs.getString("codviagem")
-                        + ", " + rs.getString("codviagem") + ", " + rs.getString("cidade") + ", " + rs.getString("estado")
-                        + ", " + rs.getString("vlrpago"));
+
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -212,9 +229,21 @@ public class ViewController implements ControllerDAO {
         try {
 
             conn = conex.conex();
-            st = conn.prepareStatement("UPDATE study.fretefx" + "SET vlrfrete + vlrfrete = ? " +
+            st = conn.prepareStatement("UPDATE study.fretefx " +
+                    "SET vlrfrete = vlrfrete + ? " +
                     "WHERE " +
                     "(id = ?) ");
+
+
+            vlrfrete = tf11.getText();
+            atualizar = Integer.parseInt(tf12.getText());
+
+
+            st.setString(1, vlrfrete);
+            st.setInt(2, atualizar);    // O segundo número é o ID do usuário cadastrado
+
+
+
 
             int rowsAffected = st.executeUpdate();
 
@@ -250,7 +279,13 @@ public class ViewController implements ControllerDAO {
             conn = conex.conex();
             st = conn.prepareStatement("DELETE FROM study.fretefx "
                     + "WHERE " +
-                    "id = ?");
+                    "id = ? ");
+
+            excluir = Integer.parseInt(tf13.getText());
+
+            st.setInt(1, excluir);
+
+
             int rowsAffected = st.executeUpdate();
 
             System.out.println("Rows Affected: " + rowsAffected);
