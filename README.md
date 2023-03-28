@@ -26,7 +26,8 @@ Em uma parte reservada é mostrado o ID que será utilizado das ações posterio
 
 # Atualizar Dados
 
-![Captura de tela de 2023-03-26 16-20-51](https://user-images.githubusercontent.com/96485637/227801413-fae6ddcc-b189-4329-a3da-b04168cfa840.png)
+
+![Captura de tela de 2023-03-27 22-55-46](https://user-images.githubusercontent.com/96485637/228106935-7add456f-31ac-4356-9053-59102b0af524.png)
 
 Os dados precisaram do número do cadastro fornecido do canto inferior direito para que seja possível realizar a atualização.
 
